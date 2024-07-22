@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --snitap-sun: #FFCD1E;
+  --snitap-sky-mid: #06B6D4;
+  --snitap-sky-light: #F472B6;
+  --snitap-joy-mid: #F472B6;
+  --snitap-joy-light: #F472B6;
+  --snitap-leaf-mid: #16A34A;
+
+  --background: #FAFAFA;
+  --highlights: #000000;
+  --text: #050505;
+
+  --ff-base: "Montserrat", sans-serif;
+  --text-xl: 4rem;
+  --text-lg: 2.5rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+}
+
+html, button {
+  font: 500 1rem/1.5 var(--ff-base);
+}
+
+h1, h2 {
+  font-family: "Syne" sans-serif;
+}
+
+h1 {
+  font-size: var(--text-xl);
+  line-height: 1.25;
+} 
+
+h2 {
+  font-size: var(--text-lg);
+  line-height: 1.2;
+}
+
