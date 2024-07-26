@@ -60,6 +60,13 @@
       position: relative;
       line-height: 0;
 
+      animation: image-appear linear backwards;
+      animation-timeline: view();
+      animation-range: 100px 300px;
+      &[data-delay] {
+        animation-range: 150px 350px;
+      }
+
       & > img {
         height: 25rem;
         object-fit: cover;
@@ -89,5 +96,12 @@
         grid-area: D;
       }      
     }
+  }
+}
+
+@keyframes image-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
   }
 }
